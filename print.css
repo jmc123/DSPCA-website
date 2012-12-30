@@ -1,0 +1,21 @@
+@media print{
+	div#navigation{
+		display:none;
+	}
+	body a{
+		text-decoration:underline;
+	}
+	body img{
+		display:none;
+	}
+	div#header{
+		display:none;
+	}
+	div#photos{
+		display:none;
+	}
+	div#googlemap{
+		display:none;
+	}
+
+}

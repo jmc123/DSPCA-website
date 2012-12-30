@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>Dublin SPCA</title>
+		<link href="world.css" rel="stylesheet" type="text/css" />
+		<link href="print.css" rel="stylesheet" type="text/css" media="print"/>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript" src="../jsContact.js"></script>
+	</head>
+	<body onload="initialize()" id="contact">
+	<div id="content">
+		<div id="header">
+			<img src="../images/DSPCAlogo.png" alt="banner picture" />
+		</div>
+		<div id="navigation">
+			<ul id="nav">
+				<li><a href="index.html" id="indexLink">Home</a></li>
+				<li><a href="about.html" id="aboutLink">About Us</a></li>
+				<li><a href="contact.html" id="contactLink">Contact Us</a></li>
+				<li><a href="campus.html" id="lostLink">Animal Centre</a></li>
+				<li><a href="fao.html" id="faoLink">FAO</a></li>
+			</ul>
+		</div>
+		<div id="queryForm">
+			<h1>Please leave a message
+			</h1>
+			<form id="formMess" method="post" name="form">
+				<p>
+					<label class="label" for="name">Whats is your name?</label>
+					<input type="text" name="name" id="name"/>
+				</p>
+				<p>
+					<label class="label" for="email">What is your email address?</label>
+					<input type="text" name="email" id="email"/>
+				</p>
+				<p>
+					<label class="label" for="hear">Where did you about us?</label>
+					<select name="hear" id="hear">
+						<option value="void">Select One</option>
+						<option value="int">Internet</option>
+						<option value="friend">Friend</option>
+						<option value="tv">Television</option>
+						<option value="paper">Newspaper</option>
+					</select>
+				</p>
+				<p>
+					<label class="label" for="message">Message:</label>
+					<textarea name="message" id="message" cols="25" rows="4"></textarea>
+				</p>
+				<p>
+					<input type="submit" name="submit" id="submess" value="Submit Message" onClick="validate()"/>
+				</p>
+					
+			</form>
+		</div>
+		<div id="googlemap">
+			<h3>Find our rescue and A&#38;E centre here:</h3>
+			<div id="map" style="width:450px; height:300px">
+			</div>
+		</div>
+		<div id="hours">
+			<h3>Opening Hours</h3>
+			<table>
+				<tr><td>Monday to Friday</td><td>11:00am - 5:00pm</td></tr>
+				<tr><td>Saturday</td><td>12:00pm - 4:30pm</td></tr>
+				<tr><td>Sunday</td><td>12:00pm - 4:00pm</td></tr>
+				<tr><td colspan="2">Closed Bank Holiday Weekends</td></tr>
+			</table>
+		</div>
+		<div id="footer">
+			<p>&copy; DSPCA Client Side Project 2012 <span id="indent">Find us on:</span> </p>
+			<span id="pictureLinks"><a href="http://www.youtube.com/user/DSPCA"><img src="../images/youtube.png" alt="youtube pic" /></a>
+														<a href="http://twitter.com/DublinSPCA"><img src="../images/twitter.jpg" alt="twitterpic" /></a>
+														<a href="http://www.facebook.com/dspca?v=info&#38;ref=ts"><img src="../images/facebook.gif" alt="facebookpic" /></a>
+			</span>
+		</div>
+		<a href="../contact.html" class="alternate"><img src="../images/fontIncrease.gif" alt="font increase pic"/>Decrease font</a>
+		<p id="date">Today's Date:<script type="text/javascript" >ShowDate()</script></p>
+
+	</div>
+	</body>
+</html>
